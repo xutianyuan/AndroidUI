@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAF3FE"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Guideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+   <!-- android:orientation="horizontal|vertical"  辅助线的对齐方式
+    app:layout_constraintGuide_percent="0-1"   距离父级宽度或高度的百分比(小数形式)
+    app:layout_constraintGuide_begin=""        距离父级起始位置的距离(左侧或顶部)
+    app:layout_constraintGuide_end=""          距离父级结束位置的距离(右侧或底部)
+
+    Guideline是一条参考线，可以帮助开发者进行辅助定位，
+    并且实际上它并不会真正显示在布局中，像是数学几何中的辅助线一样，
+    使用起来十分方便，出场率很高，Guideline也可以用来做一些百分比分割之类的需求，
+    有着很好的屏幕适配效果，Guideline有水平和垂直方向之分，
+    位置可以使用针对父级的百分比或者针对父级位置的距离-->
+
