@@ -61,8 +61,12 @@ class LayoutActivity: AppCompatActivity() {
         setContentView(R.layout.constraint_layout_group)
 
         //占位符
+        setContentView(R.layout.constraint_layout_place_holder)
 
         //流式虚拟布局
+
+        //层布局
+
 
 
     }
