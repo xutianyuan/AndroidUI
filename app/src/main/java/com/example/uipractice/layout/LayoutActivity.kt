@@ -8,7 +8,6 @@ class LayoutActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         //位置约束
 
         //1.基础用法
@@ -36,7 +35,7 @@ class LayoutActivity: AppCompatActivity() {
         // setContentView(R.layout.constraint_layout_size_spread)
         // setContentView(R.layout.constraint_layout_size_percent)
         //匹配内容大小但不超过约束限制
-       // setContentView(R.layout.constraint_layout_size_wrap)
+        setContentView(R.layout.constraint_layout_size_wrap)
 
         //3.比例设置
        // setContentView(R.layout.constraint_layout_ratio)
@@ -50,5 +49,21 @@ class LayoutActivity: AppCompatActivity() {
         setContentView(R.layout.constraint_layout_chain_packed)
         // 支持权重
         setContentView(R.layout.constraint_layout_weight);
+
+
+        //参考线
+        setContentView(R.layout.constraint_layout_guide_line)
+
+        //屏障
+        setContentView(R.layout.constraint_layout_brrrier)
+
+        //组
+        setContentView(R.layout.constraint_layout_group)
+
+        //占位符
+
+        //流式虚拟布局
+
+
     }
 }
