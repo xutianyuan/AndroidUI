@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAF3FE"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/C"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="C"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/D"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="D"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/E"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="E"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/F"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="F"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/G"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="G"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/H"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:text="H"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:flow_wrapMode="chain"
+        app:constraint_referenced_ids="A,B,C,D,E,F,G,H"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+   <!-- Flow的constraint_referenced_ids关联的控件是没有设置约束的，
+    这一点和普通的链是不一样的，这种排列方式是Flow的默认方式none，
+    我们可以使用app:flow_wrapMode=""属性来设置排列方式，
+    并且我们还可以使用flow_horizontalGap和flow_verticalGap
+    分别设置两个view在水平和垂直方向的间隔，下面我们再添加几个控件来展示三种排列方式：
+    none（默认值）：所有引用的view形成一条链，水平居中，超出屏幕两侧的view不可见
+    chian：所引用的view形成一条链，超出部分会自动换行，同行的view会平分宽度
+    aligned：所引用的view形成一条链，但view会在同行同列。
+    app:flow_horizontalStyle="packed｜spread｜spread_inside"  所有水平链的配置
+    app:flow_verticalStyle="packed｜spread｜spread_inside"    所有垂直链的配置
+
+    app:flow_firstHorizontalStyle="packed｜spread｜spread_inside" 第一条水平链的配置，其他条不生效
+    app:flow_firstVerticalStyle="packed｜spread｜spread_inside"   第一条垂直链的配置，其他条不生效
+    app:flow_lastHorizontalStyle="packed｜spread｜spread_inside"  最后一条水平链的配置，其他条不生效
+    app:flow_lastVerticalStyle="packed｜spread｜spread_inside"    最后一条垂直链的配置，其他条不生效 -->
+

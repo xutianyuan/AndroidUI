@@ -63,11 +63,19 @@ class LayoutActivity: AppCompatActivity() {
         //占位符
         setContentView(R.layout.constraint_layout_place_holder)
 
-        //流式虚拟布局
+        //流式虚拟布局  思考，这个是不是可以用来替换流式布局呢
+        setContentView(R.layout.constraint_layout_virtual_chain)
+        setContentView(R.layout.constraint_layout_virtual_align)
+        setContentView(R.layout.constraint_layout_virtual_count)
 
         //层布局
+        setContentView(R.layout.constraint_layout_layer)
 
+        //图片
+        setContentView(R.layout.constraint_layout_image_round)
 
+        //
+        setContentView(R.layout.constraint_layout_image_filter)
 
     }
 }
