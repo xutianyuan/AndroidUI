@@ -8,6 +8,7 @@ class LayoutActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //这是一个分支测试
         //位置约束
 
         //1.基础用法
