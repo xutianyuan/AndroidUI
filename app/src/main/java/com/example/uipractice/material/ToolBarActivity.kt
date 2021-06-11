@@ -1,7 +1,10 @@
 package com.example.uipractice.material
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import com.example.uipractice.R
 /*
 1、Application当中的theme，当然会应用于所有的Window了，是的所有Activity，都会被Theme改变
@@ -15,5 +18,22 @@ class ToolBarActivity :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tool_bar_activity)
         setSupportActionBar(findViewById(R.id.my_toolbar))
+        supportActionBar?.let { ab ->
+            ab.setHomeAsUpIndicator(R.drawable.ic_menu)
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar_view, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
